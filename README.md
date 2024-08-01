@@ -1,8 +1,6 @@
-# Task X - Project Repository
+# Task 18 - Project Repository
 
 This repository provides the structure necessary to approve your assignment. Please refer to the contents of this file for all necessary information. 
-
-Link to task description on the: [dedicated page](https://eventornado.com/)
 
 # Prerequisites
 
