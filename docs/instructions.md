@@ -5,20 +5,41 @@
 ### Brief Description
 Participants are required to develop a machine learning model to classify iris species based on measurements of their sepals and petals using the Iris dataset. The objective is to apply data processing, model training, and evaluation techniques to predict the species with high accuracy.
 
+### Short Description
+Develop a machine learning model to classify iris species using the Iris dataset.
+
 ### Expected Sequence of Steps
 
-**Step 1: Retrieve Data**
+**Step 1: Data preprocessing**
 - Load the Iris dataset from scikit-learn.
+- Perform any necessary data cleaning, preprocessing, or normalization. 
+- Split the dataset into a training set and a testing set. 
 
-**Step 2: Process the Data**
-- Perform any necessary preprocessing steps such as scaling or normalizing the data.
+**Step 2: Model Selection**
+- Choose at least two different machine learning algorithms to train your model. Suggested algorithms include Logistic Regression, K-Nearest Neighbors, Support Vector Machine, or Decision Tree. 
+- Evaluate the pros and cons of each selected algorithm in the context of the Iris dataset.
 
-**Step 3: Create Visualizations**
-- Generate visualizations to explore the data distributions and relationships between features.
+**Step 3: Model Training and Evaluation**
+- Train your model using the training data. 
+- Evaluate the accuracy of each model on the test data. 
+Select the model that performs the best. 
 
-**Step 4: Model Training**
-- Train at least two different classification models using scikit-learn.
+**Step 4: Model Evaluation**
+- Create visualizations to show the distribution of the different features of the iris species. 
+- Plot the decision boundaries of your model, if applicable.  
 
-**Step 5: Model Evaluation**
-- Evaluate and compare the performance of the models based on their accuracy and visualize the decision boundaries.
+# Input Data 
+- Data Description: The Iris dataset is a well-known dataset in pattern recognition and is integrated into the scikit-learn library. It contains 150 instances of iris flowers from three different species: Setosa, Versicolor, and Virginica (50 instances each). Each instance has four features: sepal length, sepal width, petal length, and petal width, all measured in centimeters. 
+-Data Format: csv 
+- Data Source: data is available in sklearn datasets 
+
+# Expected Outputs 
+Participants are expected to produce a machine learning model capable of classifying iris species based on their sepal and petal measurements. The outputs should demonstrate not only the effectiveness of the model through accuracy metrics but also provide insights into the data and the model's decision-making process through visualizations.
+
+# Output Format
+- Model Accuracy Report (A textual summary that includes the accuracy scores of the models tested, ideally presented in a tabulated format within the Python notebook or script comments.) 
+- Feature Distribution Visualizations (Pair plots or scatter plots showing the relationships and distributions of features by species. These should use different colors or markers for different iris species to aid in visual distinction.) 
+- Model Decision Boundaries (Visual plots illustrating the decision boundaries determined by the models. For models where such a visualization is feasible (e.g., K-Nearest Neighbors, Decision Trees), provide plots showing how the model classifies different regions of the feature space.) 
+- Confusion Matrix (A confusion matrix for each model to illustrate the true positives, true negatives, false positives, and false negatives. This can help in understanding how well the model is performing with respect to each class.) 
+
 
