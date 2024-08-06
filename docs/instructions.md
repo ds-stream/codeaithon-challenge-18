@@ -39,7 +39,9 @@ The Iris dataset is a foundational dataset used in statistical learning and mach
     - Versicolor: Iris Versicolor species.
     - Virginica: Iris Virginica species.
 - Data Format: csv 
+
 ![Head of the Data](image.png)
+
 ### Data Source
 Data is available in sklearn datasets 
 **Access Code Snippet:**
@@ -54,11 +56,16 @@ Participants are expected to produce a machine learning model capable of classif
 
 # Output Format
 - Model Accuracy Report (A textual summary that includes the accuracy scores of the models tested, ideally presented in a tabulated format within the Python script.) 
+
 ![Example of the text report](image-1.png)
+
 - Feature Distribution Visualizations (Pair plots or scatter plots showing the relationships and distributions of features by species. These should use different colors or markers for different iris species to aid in visual distinction.) 
+
 ![Example of feature distribution](image-2.png)
+
 - Model Decision Boundaries (Visual plots illustrating the decision boundaries determined by the models. For models where such a visualization is feasible (e.g., K-Nearest Neighbors, Decision Trees), provide plots showing how the model classifies different regions of the feature space.) 
 - Confusion Matrix (A confusion matrix for each model to illustrate the true positives, true negatives, false positives, and false negatives. This can help in understanding how well the model is performing with respect to each class.) 
+
 ![Example of confusion matrix](image-3.png)
 
 
