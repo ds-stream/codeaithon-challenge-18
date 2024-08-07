@@ -51,6 +51,16 @@ Data is available in sklearn datasets
   X, y = data.data, data.target
 ```
 
+### Solution development
+All the code should be put inside the `solution.py` file.
+
+Please replace `### PUT YOUR CODE HERE` with the final implementation
+
+The code should be executable, as there are implemented some unit tests, that will be running
+against implemented method.
+
+Code should include at least two functions - `preprocess_data` (loading data, splitting data into training and test), `train_model` (training of model).
+
 ### Expected Outputs 
 Participants are expected to produce a machine learning model capable of classifying iris species based on their sepal and petal measurements. The outputs should demonstrate not only the effectiveness of the model through accuracy metrics but also provide insights into the data and the model's decision-making process through visualizations.
 
