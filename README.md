@@ -1,4 +1,4 @@
-# Task 18 - Iris Species Classification Model - Project Repository
+# Task 28 - Find a bug in the code - Project Repository
 
 This repository provides the structure necessary to approve your assignment. Please refer to the contents of this file (as well as detailed instructions contained in markdown files in the /docs folder) for all necessary information. 
 
