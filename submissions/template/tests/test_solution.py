@@ -1,6 +1,6 @@
 import unittest
 from sklearn.datasets import load_iris
-from your_module import preprocess_data, train_model
+from submissions.template.results.solution import preprocess_data, train_model
 
 class TestIrisClassification(unittest.TestCase):
     def test_data_loading(self):
