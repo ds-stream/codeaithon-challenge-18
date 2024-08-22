@@ -2,7 +2,7 @@
 Participants are required to develop a machine learning model to classify iris species based on measurements of their sepals and petals using the Iris dataset. The objective is to apply data processing, model training, and evaluation techniques to predict the species with high accuracy.
 
 ## Short Description
-Develop a machine learning model to classify iris species using the Iris dataset.
+Participants are tasked with developing a machine learning model to classify iris species—Setosa, Versicolor, and Virginica—using the well-known Iris dataset. The process involves data preprocessing, selecting and comparing at least two machine learning algorithms, and training these models on the dataset. Participants must evaluate the performance of the models, selecting the one with the highest accuracy. Additionally, the task requires visualizations that include feature distributions, model decision boundaries, and confusion matrices to provide insights into the model's effectiveness and decision-making process. All code should follow the required steps and format to ensure accurate and reproducible results.
 
 ## Expected Sequence of Steps
 
