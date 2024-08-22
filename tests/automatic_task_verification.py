@@ -1,16 +1,22 @@
-import os
-import importlib.util
-import pytest
+import unittest
+from sklearn.datasets import load_iris
+from your_module import preprocess_data, train_model
 
+class TestIrisClassification(unittest.TestCase):
+    def test_data_loading(self):
+        data = load_iris()
+        self.assertEqual(data.data.shape, (150, 4))  # Checks if the data shape is correct
 
-def test_submission_files_exist(coder):
-    base_path = f"submissions/coder_{coder}"
-    folders = ["tests", "results"]
+    def test_preprocessing(self):
+        data = load_iris()
+        X_train, X_test, y_train, y_test = preprocess_data(data.data, data.target)
+        self.assertEqual(X_train.shape[0], 120)  # Assuming 80% training data
 
-    for folder in folders:
-        assert os.path.exists(
-            os.path.join(base_path, folder)
-        ), f"{folder.capitalize()} directory does not exist"
+    def test_model_accuracy(self):
+        data = load_iris()
+        X_train, X_test, y_train, y_test = preprocess_data(data.data, data.target)
+        model, accuracy = train_model(X_train, y_train, X_test, y_test)
+        self.assertGreater(accuracy, 0.90)  # Check if accuracy is above 90%
 
-        files = os.listdir(os.path.join(base_path, folder))
-        assert len(files) > 0, f"No {folder} files found"
+if __name__ == '__main__':
+    unittest.main()
