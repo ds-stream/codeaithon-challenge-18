@@ -13,15 +13,13 @@ Example:
 - Input: "hello world"
 - Output: "olleh dlrow"
 
-Details: The function first splits the input string into individual words, reverses each word, and then joins them back into a single string with spaces.
-
 ### Known Issue
 The function has a known issue and may not correctly reverse substrings as expected, especially in complex scenarios.
 
 ## Expected Sequence of Steps
 
 - Identify the bug in the function that leads to incorrect results.
-- Correct the code so that it functions as intended, which includes correctly reversing substrings
+- Correct the code so that it functions as intended, which includes correctly reversing substrings.
 
 ## Deliverables
 - A modified version of the reverse_substrings function that correctly handles all specified cases.
