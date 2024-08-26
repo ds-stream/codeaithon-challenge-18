@@ -14,7 +14,7 @@ def developer(request):
 
 def import_solution_module(developer):
     solution_path = os.path.join(
-        f"submissions/developer-{developer}", "results", "solution.py"
+        "submissions", f"developer-{developer}", "results", "solution.py"
     )
     assert os.path.exists(
         solution_path
@@ -27,9 +27,10 @@ def import_solution_module(developer):
 
 
 @pytest.fixture(scope="session")
-def data_pipeline(request):
+def solution(request):
     developer = request.config.getoption("--developer")
     solution = import_solution_module(developer)
+    return solution
 
 
 # run pytest tests/autoamtic_task_verification.py --developer=<number>
